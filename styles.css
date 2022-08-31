@@ -1,6 +1,10 @@
 :root{
-    --color: white;
-    --background-color:black;
+    --txt: white;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url(Norse-Bold.otf);
 }
 
 *{
@@ -9,31 +13,68 @@
     border:0;
     box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-    color: var(--txt0);
+    color: var(--txt);
 }
 
 .container {
     display:flex;
+    height: 100vh;
+    width: 100vw;
 }
+   
 
-.top-right{
+
+.content {
     display:flex;
     flex-direction: column;
+    flex:5;
+    justify-content:center;
+    background-color: black;
+
+
 }
 
-form {
-    width: auto;
-    border: 1px  #CCC solid;
-    height: 200px;
+.top-left {
+    background-image: url(leaf-image.jpeg);
+    background-size: cover;
+    flex:3;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
 
-    box-shadow: 
-        inset 0px 11px 8px -10px #CCC,
-        inset 0px -11px 8px -10px #CCC; 
+
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.5rem;
+    font-family: "Norse Bold";
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+form {
+    display:flex;
+    flex-flow: column wrap;
+    width: auto;
+    height: 290px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 5px 4px rgba(253, 249, 249, 0.2);
+}
+
+.title {
+    margin-top:10px;
 }
 
 .name {
     display:flex;
+    margin-top: 20px;
 }
 
 .password {
@@ -43,6 +84,16 @@ form {
 .info {
     display:flex;
     margin-bottom: 20px;
+}
+
+input {
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+
+.fname{
+    padding:10px;
+    margin-top:10px;
 }
 
 button { 
@@ -56,7 +107,9 @@ button {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-  
+.bottom-section {
+    height: ;
+}
 
 a {
     color:#596D48;
