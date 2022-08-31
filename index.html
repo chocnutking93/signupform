@@ -4,34 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Sign-up Form</title>
 </head>
 <body>
-    <form action="results.html" method="GET">
-        <div>
-            <label for="fname">First Name</label>
-            <input type="fname" id="fname">
+    <div class="container">
+        <div class="top-left">
+            <div class="logo"><img src="city-lights-moon-light.gif" alt=""></a></div>
         </div>
-        <div>
-            <label for="lname">Last Name</label>
-            <input type="lname" id="lname">
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Password" required> 
-        </div>
-        <div>
-            <label for="password">Confirm Password</label>
-            <input type="password" id="confirm_password" placeholder="Confirm Password">
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" placeholder="johndoe@gmail.com" id="email"> 
-        </div>
-        <div>
-            <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone">
-        </div>
-    </form>
+    
+        <div class="content">
+            <div class="top-right">
+                <h2>This is not a real online service! You know you need something<br>
+                like this in your life to help you realize your deepest dreams. 
+               <br>Sign up now to get started.
+               <br><br>You know you want to.
+                </h2>
+            </div>
+    
+            <form action="results.html" method="GET">
+            <div class="title">Let's do this!</div>
+    
+            <div class="name"> 
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="fname" id="fname" placeholder="John"> 
+                </div> 
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="lname" id="lname" placeholder="Doe">
+                </div>
+            </div>
+    
+            <div class="password">
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required> 
+                </div>
+                <div>
+                    <label for="password">Confirm Password</label>
+                    <input type="password" id="confirm_password" placeholder="Confirm Password">
+                </div>                            
+            </div>
+    
+            <div class="info">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="johndoe@gmail.com" id="email"> 
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(123)-456-7890">
+                </div>
+            </div>
+            </form>   
+    
+            <div class="bottom-section">
+                <button type="submit">Create Account</button>
+                <div>Already have an account? <a href="#">Log in</a></div>
+            </div>
+            
+        </div> 
+    </div>
+    
+     
 </body>
 </html>
